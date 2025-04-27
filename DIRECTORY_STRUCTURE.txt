@@ -1,0 +1,30 @@
+Portfolio Project Directory Structure
+===============================
+
+portfolio/
+│
+├── css/               # Stylesheet directory
+│   └── styles.css     # Main CSS file with all styling
+│
+├── js/                # JavaScript directory
+│   └── script.js      # Main JS file with all functionality
+│
+├── images/            # Image assets directory
+│   ├── prajwal pic.jpg    # Profile picture
+│   ├── dMs.jpg            # Disaster Management System project image
+│   ├── tradepro.png       # TradePro project image
+│   ├── college.png        # College Connect project image
+│   ├── detox.png          # Detox Yantra project image
+│   ├── digital closet.png # Digital Closet project image
+│   └── central.png        # Branch Management System project image
+│
+├── index.html         # Main HTML file
+├── package.json       # Project dependencies
+├── README.md          # Project documentation
+└── DIRECTORY_STRUCTURE.txt  # This file
+
+Notes:
+- The CSS directory contains the consolidated styles.css file with all website styling
+- The JS directory contains interactive features like the terminal, theme switcher, and project filters
+- The images directory contains all project screenshots and personal photos
+- The root directory contains the main HTML file and documentation 

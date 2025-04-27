@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal D P | Software Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS Integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('FGGxwiBDJknFyhph1')
+    </script>
+</head>
+
+<body onload="window.scrollTo(0, 0);">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <div class="logo">P</div>
+                    <div class="logo-name">
+                        <h1>Prajwal D P</h1>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </label>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Prajwal D P</span></h1>
+                <h2>Software Engineer</h2>
+                <p>I build exceptional digital experiences with clean, efficient code.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/prajwaldp223" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/prajwal-d-p-4a9692260/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/its_prajwaldp/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://medium.com/@prajwaldp223" target="_blank"><i class="fab fa-medium"></i></a>
+                </div>
+                <div class="terminal-preview">
+                  
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/prajwal pic.jpg?height=100&width=100" alt="Prajwal's pic" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="terminal-title">terminal</div>
+                    </div>
+                    <div class="terminal-body" id="terminal">
+                        <div class="terminal-output" id="terminal-output">
+                            <p>Welcome to my interactive portfolio terminal!</p>
+                            <p>Type <span class="command">'help'</span> for available commands.</p>
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="prompt">$</span>
+                            <input type="text" id="terminal-input" autofocus>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="about-image">
+                    <img src="/prajwal pic.jpg?height=500&width=400" alt="Prajwal working on code">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/dMs.jpg?height=300&width=500" alt="DMS">
+                    </div>
+                    <div class="project-info">
+                        <h3>Disaster Management System -Resque Hub</h3>
+                        <p> This provides a robust platform for users to stay informed, prepared, and connected during
+                            emergencies and everyday situations. also have additional features like weather updates,
+                            disaster news, and emergency resources.The chatbot helps users get information about the
+                            disaster and the resources available.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://rescuehub.netlify.app/" target="_blank" class="btn small secondary">Live
+                                Demo</a>
+                            <a href="https://github.com/prajwaldp223/Disaster_Management_system" target="_blank"
+                                class="btn small secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="images/tradepro.png?height=300&width=500" alt="trade pro">
+                    </div>
+                    <div class="project-info">
+                        <h3>Stock Management System:TradePro</h3>
+                        <p>TradePro is a full-featured web-based trading platform that allows users to manage
+                            portfolios, buy and sell stocks, track performance, and manage their wallet. This
+                            application provides a comprehensive trading experience with real-time data visualization
+                            and user account management.</p>
+                        <div class="project-tags">
+                            <span>Ejs</span>
+                            <span>CSS</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                            <span>Multer</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#" target="_blank" class="btn small">App Store</a> -->
+                            <a href="https://github.com/prajwaldp223/TradePro" target="_blank"
+                                class="btn small secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/college.png?height=300&width=500" alt="college connect">
+                    </div>
+                    <div class="project-info">
+                        <h3>College Connect</h3>
+                        <p>Its is website for college students to get each and every information regarading the college
+                            and the events happening in the college. they can schedule, join, give feedbacks, and get
+                            the information about the college. login and signup are also provided.this website is
+                            responsive and has a clean and modern design making students comfortable with the website.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Firebase</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://65df33f6fec83d0c0be3d508--comfy-lokum-5f0060.netlify.app/" target="_blank"
+                                class="btn small secondary">Live Demo</a>
+                            <a href="https://github.com/prajwaldp223/College_Connect" target="_blank"
+                                class="btn small secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/detox.png" alt="detox yantra">
+                    </div>
+                    <div class="project-info">
+                        <h3>Detox_Yantra</h3>
+                        <p>Featuring our webpage DETOX YANTRA help our user stay away being addicted to digital stuff.an
+                            user firendly dasgboard the feedback system, signin. regular monitring display the user's
+                            progress and the time they spend on the digital stuff.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://663bab34e81fd7007ef6eeca--loquacious-genie-39a47f.netlify.app/"
+                                target="_blank" class="btn small secondary">Live Demo</a>
+                            <a href="https://github.com/prajwaldp223/Detox_Yantra" target="_blank"
+                                class="btn small secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="images/digital closet.png" alt="digital-closet">
+                    </div>
+                    <div class="project-info">
+                        <h3>Digital Closet</h3>
+                        <p>This project aims to help users to manage their wardrobe efficiently, track item
+                            usage, and promote sustainability by suggesting mindful practices like recycling, donating,
+                            or repurposing unused items. The platform provides personalized outfit suggestions,
+                            analytics on item usage, and community-driven features like clothing exchanges, </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>EJS</span>
+                            <span>Bootstrap</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://digital-closet.onrender.com/user/home" target="_blank"
+                                class="btn small secondary">Live Demo</a>
+                            <a href="https://github.com/prajwaldp223/Digital_Closet" target="_blank"
+                                class="btn small secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="all">
+                    <div class="project-image">
+                        <img src="images/central.png?height=300&width=500"
+                            alt="Centralized-Branch-File-Access-Management-System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Centralized-Branch-File-Access-Management-System</h3>
+                        <p>This document outlines the steps to create directories and users for different branches of an
+                            organization, and to set up access controls so that users can manage files within their
+                            respective branches. the admin/hr is given with certaion privilages to handle the other
+                            department and their
+                            emplyoees</p>
+                        <div class="project-tags">
+                            <span>LINUX -command line</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/prajwaldp223/Centralized-Branch-File-Access-Management-System/blob/main/documentation.md"
+                                target="_blank" class="btn small secondary">Documentation</a>
+                            <!-- <a href="https://github.com/prajwaldp223/Centralized-Branch-File-Access-Management-System/blob/main/documentation.md" target="_blank"
+                                class="btn small secondary">GitHub</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Bit N Build</h3>
+                    <p>Participated in 24hrs national level hackathon Bit N Build conducted by GDSC UVCE and made out as
+                        the runner ups</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Google Cloud Skill boost</h3>
+                    <p>Professional certification demonstrating expertise in designing distributed systems on Google
+                        Cloud Platform.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Anthology</h3>
+                    <p>Worked with multiple publications and authors and published few books.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Open Source Contributor</h3>
+                    <p>Active contributor to Gssoc'24 and Wob'25 and made 20+ contributions to the repositories.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+
+                <div class="resume-download">
+                    <p>View my full resume for more details about my experience, education, and skills.</p>
+                    <a href="https://drive.google.com/drive/folders/1xL6PI4GR1at7G5STgtExPRYAnWhJ3VCx?usp=sharing"
+                        class="btn primary" download><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+                <div class="resume-preview">
+                    <div class="resume-section">
+                        <h3>Work Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024 - Present</div>
+                                <div class="timeline-content">
+                                    <h4>Intern</h4>
+                                    <h5>Maalgudi techno labs</h5>
+                                    <p>Working on web development projects utilizing modern frameworks and technologies.
+                                        Collaborating with senior developers to develop and deploy robust web
+                                        applications for clients.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Software Developer</h4>
+                                    <h5>CodersCave</h5>
+                                    <p>Developed and maintained web applications using HTML, CSS, and JavaScript.
+                                        Implemented responsive designs and collaborated with team members on project
+                                        deliverables and code reviews.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Data testing and analysis</h4>
+                                    <h5>Phyllo</h5>
+                                    <p>Conducted comprehensive data testing and analysis to identify patterns and
+                                        insights. Worked with datasets to ensure accuracy and created reports to
+                                        communicate findings effectively.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 - 2026</div>
+                                <div class="timeline-content">
+                                    <h4>B.Tech</h4>
+                                    <h5>University of Visvesvarya College of Engineering</h5>
+                                    <p>Pursuing a Bachelor's degree in Information Science and Engineering. Focusing on
+                                        core computer science subjects, software engineering principles, and modern
+                                        development methodologies.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 - 2022</div>
+                                <div class="timeline-content">
+                                    <h4>P.U.</h4>
+                                    <h5>Presidency Pre University College</h5>
+                                    <p>Completed Pre-University education with focus on Science stream (Physics,
+                                        Chemistry, Mathematics, and Computer Science). Participated in various technical
+                                        events and competitions.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020</div>
+                                <div class="timeline-content">
+                                    <h4>SSLC</h4>
+                                    <h5>Jnana Bodhini High School</h5>
+                                    <p>Completed Secondary School Leaving Certificate with distinction. Participated in
+                                        extracurricular activities and developed foundation in mathematics and sciences.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:prajwaldp223@gmail.com">prajwaldp223@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+918792313624">+91 8792313624</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p><a href="https://maps.app.goo.gl/HMUnpvTZqTr8ZyKW8">K R Circle, Bangalore</a></p>
+                    </div>
+                    <div class="social-links large">
+
+                        <a href="https://github.com/prajwaldp223" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prajwal-d-p-4a9692260/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/its_prajwaldp/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://medium.com/@prajwaldp223" target="_blank"><i class="fab fa-medium"></i></a>
+
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <input type="submit" class="btn primary" id="submit-btn" value="Send Email">
+                        <div id="status-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Prajwal D P. All Rights Reserved.</p>
+            <p>Designed and built with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
